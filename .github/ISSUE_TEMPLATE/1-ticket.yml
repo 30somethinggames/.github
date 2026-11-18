@@ -18,7 +18,7 @@ body:
   - type: textarea
     id: acceptance
     attributes:
-      label: Done when
+      label: Acceptance Criteria
       description: "What is true when this is done, as Given / When / Then: one per behaviour, each observable by someone who did not write it. Checks that must pass and tests that must exist go here too, as their own bullets."
       placeholder: |
         - Given a signed-in player with no saved games
