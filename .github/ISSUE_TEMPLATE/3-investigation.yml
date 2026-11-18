@@ -1,0 +1,30 @@
+name: Investigation
+description: A question to answer. Ends in a recommendation and its evidence, not a change.
+type: Investigation
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What we need to know, and why it matters now.
+    validations:
+      required: true
+  - type: textarea
+    id: options
+    attributes:
+      label: Options
+      description: The candidates already known, and any already ruled out (with why).
+  - type: textarea
+    id: measure
+    attributes:
+      label: What to measure
+      description: What evidence decides it (cost, performance, effort, risk), and how it is gathered.
+    validations:
+      required: true
+  - type: textarea
+    id: decision
+    attributes:
+      label: Done when
+      description: The decision this ends in, who makes it, and where it is written down. Follow-up work becomes its own issues.
+    validations:
+      required: true

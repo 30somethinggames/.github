@@ -1,0 +1,52 @@
+name: Bug
+description: Something broke or behaves differently from what was intended.
+type: Fix
+body:
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened
+      description: What you saw. Paste the error, link the Sentry event, attach a screenshot or recording.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What should have happened
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: The fewest steps from a fresh start. Say if it doesn't happen every time.
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: textarea
+    id: where
+    attributes:
+      label: Where
+      description: App, platform and device, environment (local, staging, production), version or commit.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Done when
+      description: "The fixed behaviour as Given / When / Then, and the test that would have caught it (it fails before the fix and passes after)."
+      placeholder: |
+        - Given …
+          When …
+          Then …
+        - A test that fails without the fix
+    validations:
+      required: true
+  - type: textarea
+    id: out-of-scope
+    attributes:
+      label: Out of scope
+      description: Related problems this fix deliberately leaves alone, and why.

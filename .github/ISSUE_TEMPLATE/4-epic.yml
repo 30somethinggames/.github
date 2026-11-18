@@ -1,0 +1,23 @@
+name: Epic
+description: One goal, delivered through sub-issues. Carries a milestone and a priority (its highest open sub-issue's).
+type: Epic
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: The one outcome this epic is for, and why. Link the feature spec or area doc if there is one.
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      description: What is true when every sub-issue is closed, observable as a whole, not a list of the sub-issues.
+    validations:
+      required: true
+  - type: textarea
+    id: out-of-scope
+    attributes:
+      label: Out of scope
+      description: What belongs to another epic or to later, so it isn't added here.

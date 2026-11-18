@@ -1,0 +1,34 @@
+name: Ticket
+description: A piece of work (feature, chore, docs, refactor). Type, priority, milestone and epic are set in triage.
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What and why, in a paragraph. Link the source (bug report, decision, PR comment) and anything this depends on (issues, decisions, rule numbers).
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: Change
+      description: What is different when this is done. Concrete enough that a diff can be checked against it.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Done when
+      description: "What is true when this is done, as Given / When / Then: one per behaviour, each observable by someone who did not write it. Checks that must pass and tests that must exist go here too, as their own bullets."
+      placeholder: |
+        - Given a signed-in player with no saved games
+          When they open the library
+          Then they see the empty state, not an error
+        - The repo's checks pass
+    validations:
+      required: true
+  - type: textarea
+    id: out-of-scope
+    attributes:
+      label: Out of scope
+      description: Adjacent things this deliberately does not touch, and why, so the next reader does not reopen the decision.
