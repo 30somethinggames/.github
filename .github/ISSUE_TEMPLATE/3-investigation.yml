@@ -24,7 +24,7 @@ body:
   - type: textarea
     id: decision
     attributes:
-      label: Done when
-      description: The decision this ends in, who makes it, and where it is written down. Follow-up work becomes its own issues.
+      label: Acceptance Criteria
+      description: The decision this ends in, who makes it, and where it is written down, as a recommendation and the evidence that justifies it. "Keep what we have" is a legitimate outcome. Follow-up work becomes its own issues.
     validations:
       required: true
